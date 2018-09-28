@@ -4,25 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>API Animal Tool</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
   <body>
-
-<!-- buttons generated will go into this div-->
-<div id="buttonDump"></div><br><br><br><br><br><hr>
+<div class="jumbotron">
 
 
 <!--form to log animals-->
 <form id="logForm">
-    <!--search text-->
-    <label for="animalInput">Add an animal!</label>
-    <input type="text" id="animal-input">
+  <!--search text-->
+  <label for="animalInput">Add an animal!<br>Type in the name below, submit, and <br> then click the new button to see a gif!</label>
+  <input type="text" id="animal-input"><br>
 
-    <!-- button that initiates button generation-->
-    <input id="add-animal" type="sumbit" value="Log an Animal!">
-</form>
+  <!-- button that initiates button generation-->
+  <input id="add-animal" type="sumbit" value="Log an Animal!"> 
+</form><br>
+
+
+<!-- buttons generated will go into this div-->
+<div id="buttonDump"></div><br>
+
 
 <div id="images"></div>
+
+</div>
 <!--JS and JQ reference-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

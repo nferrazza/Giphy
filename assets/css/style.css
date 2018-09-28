@@ -1,0 +1,39 @@
+body {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+button {
+    width: 45%;
+    background-color: rgb(154, 158, 170);
+    margin: 2px;
+    font-weight: bolder;
+
+}
+
+#buttonDump, #logForm, #images {
+    display: flex;
+    flex-direction: column;
+    align-content: center;   
+    align-items: center;
+}
+
+#logForm, #add-animal {
+    text-align: center;
+}
+
+logForm:hover {
+    background-color: yellow;
+}
+
+.jumbotron {
+    background-color: darkgray;
+}
+
+label, #add-animal {
+    background-color:  rgb(154, 158, 170);
+    border: 1px solid rgba(0, 0, 0, 0.548);
+    color: whitesmoke;
+    padding: 5px;
+}

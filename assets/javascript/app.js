@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
 //original list of animals, displays upon page load
-var animals = ["Sloth", "Dog", "Cat", "Hamster", "Rat", "Kangaroo", "Shark", "Mole", "Raptor", "Pelican", "Chimps", "Zebra", "Elephant"];
+var animals = ["Sloth", "Dog", "Cat", "Hamster",  "Chimps", "Zebra", "Elephant"];
 
 displayAnimalButtons();
 addNewButton();
@@ -18,13 +18,13 @@ function displayAnimalButtons() {
 
         var animalButton = $("<button>");
 
-        animalButton.addClass("animal");
+        animalButton.addClass("animal", "btn-primary");
 
         animalButton.attr("data-name", animals[i]);
  
         animalButton.text(animals[i]);
 
-        $("#buttonDump").append(animalButton);
+        $("#buttonDump").append(animalButton );
         
     }
 
@@ -70,6 +70,7 @@ $.ajax({
     var results = response.data;
 
     for (var i = 0; i < results.length; i++) {
+            $("#images").empty();
             console.log(results.length);
             // var gifDiv = $("<div class='item'>");
             
