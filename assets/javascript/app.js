@@ -72,28 +72,18 @@ $.ajax({
     for (var i = 0; i < results.length; i++) {
             $("#images").empty();
             console.log(results.length);
-            // var gifDiv = $("<div class='item'>");
             
 
             var animalImage = $("<img>");
             animalImage.attr("src", results[i].images.fixed_height.url);
-            
 
-            // gifDiv.prepend(animalImage);
+            
 
             $("#images").prepend(animalImage);
     }
 });
 
 
-
-
-
-
-// $("<button>").on("click",function(){
-//     console.log("button clicked");
-//     displayGifs();
-// });
 
 
 }});
